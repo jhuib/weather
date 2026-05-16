@@ -176,8 +176,8 @@ def crawl():
         time.sleep(1)
 
     save_csv(all_news)
-    print(f"✅ 本次新增新闻：{new_count} 条")
-    print(f"✅ 已保存到 {SAVE_CSV} 和 {DB_FILE}")
+    print(f" 本次新增新闻：{new_count} 条")
+    print(f" 已保存到 {SAVE_CSV} 和 {DB_FILE}")
 
 
 # ---------------------- 定时任务 ----------------------
@@ -192,7 +192,7 @@ def run_schedule():
             schedule.run_pending()
             time.sleep(60)
     except KeyboardInterrupt:
-        print("\n⏹️  定时任务已停止")
+        print("\n  定时任务已停止")
 
 
 # ====================== 启动 ======================
